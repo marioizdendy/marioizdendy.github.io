@@ -794,9 +794,6 @@ footer {
     text-align: center;
   }
 }
-.cns_r {
-  margin-top: 30px;
-}
 
 @media screen and (max-width: 700px) {
   .video-wrapper {
@@ -1056,6 +1053,10 @@ footer {
 
 
 // faq
+
+.faq_content {
+  margin-top: 50px;
+}
 
 .accordion-container {
     width: 100%;

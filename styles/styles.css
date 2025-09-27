@@ -744,10 +744,6 @@ footer {
     text-align: center;
   }
 }
-.cns_r {
-  margin-top: 30px;
-}
-
 @media screen and (max-width: 700px) {
   .video-wrapper {
     max-width: 200px;
@@ -967,6 +963,10 @@ footer {
      object-fit: contain;
   backface-visibility: hidden;
   filter: brightness(100%);
+}
+
+.faq_content {
+  margin-top: 50px;
 }
 
 .accordion-container {
