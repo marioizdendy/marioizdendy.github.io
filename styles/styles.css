@@ -95,8 +95,14 @@ body {
   width: 20%;
 }
 
-.cta_mcontainer.close_mcta {
-  display: none;
+#menu.close_mcta {
+  transform: translateY(-45%);
+  transition: 0.3s;
+}
+
+header.close_mcta {
+  transform: translateY(-51%);
+  transition: 0.3s;
 }
 
 .section_title {
@@ -118,6 +124,7 @@ body {
   left: 0;
   width: 100vw;
   z-index: 1000;
+  transition: 0.3s;
 }
 #menu .menu_container {
   max-width: 940px;
@@ -1438,7 +1445,7 @@ footer {
 
 .form-title {
   margin-top: 55%;
-  font-size: 28px;
+  font-size: 19px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #1D1D1F;
@@ -1450,7 +1457,7 @@ footer {
 }
 
 .form-subtitle {
-  font-size: 26px;
+  font-size: 15px;
   color: #646464;
   text-align: center;
   margin-bottom: 30px;
@@ -1728,6 +1735,7 @@ header {
   position: fixed;
   width: 100%;
   background: #000;
+  transition: 0.3s;
 }
 
 .menu-btn {
@@ -1812,9 +1820,12 @@ header {
 }
 
 .menu_logo {
+  display: block;
   position: relative;
   margin-left: auto;
   padding: 10px 20px;
+  transition: 0.3s;
+  transform: scale(0);
 }
 .menu_logo a {
   text-decoration: none;
@@ -1825,6 +1836,11 @@ header {
   border-radius: 35px;
   background: #ff5740;
   padding: 8px 25px;
+}
+
+.menu_logo.scale_logo {
+  transform: scale(1);
+  transition: 0.3s;
 }
 
 #popup-form textarea {
@@ -1880,7 +1896,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding: 40px;
+  padding: 20px;
   color: #fff;
   box-sizing: border-box;
 }
