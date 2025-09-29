@@ -68,7 +68,7 @@ body {
   padding: 10px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
@@ -90,6 +90,13 @@ body {
   border-radius: 50px;
   font-size: 17px;
   font-weight: 700;
+}
+.cta_mcontainer img {
+  width: 20%;
+}
+
+.cta_mcontainer.close_mcta {
+  display: none;
 }
 
 .section_title {
@@ -132,6 +139,9 @@ body {
 #menu .menu_items a:hover {
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
+}
+#menu .menu_logo {
+  margin-left: unset;
 }
 
 #logo_ae {
@@ -195,7 +205,7 @@ body {
 .link_get a {
   display: inline-block;
   margin: 0 auto;
-  padding: 12px 23px;
+  padding: 14px 65px;
   text-decoration: none;
   color: #fff;
   background: #0071E3;
@@ -379,6 +389,10 @@ body {
   padding-top: 20px;
   display: block;
   opacity: 1;
+}
+
+.owl-carousel-tabfour .owl-dots {
+  display: block !important;
 }
 
 .video_holder {
@@ -749,6 +763,9 @@ footer {
     max-width: 200px;
     margin: 0 auto;
   }
+  .video-wrapper-feedback {
+    max-width: 100% !important;
+  }
   #services_page .service_title {
     font-size: 23px;
     margin-top: 6px;
@@ -792,7 +809,6 @@ footer {
 }
 #why_section {
   background-color: #F5F5F7;
-  margin-top: 150px;
   padding-top: 65px;
 }
 #why_section .why_we_content {
@@ -1252,6 +1268,12 @@ footer {
   font-weight: 400;
   color: #535353;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.price_description img {
+  width: 6% !important;
+  margin-right: 5px;
 }
 
 .price_div {
@@ -1361,6 +1383,59 @@ footer {
   margin: 20px 0 20px 0;
 }
 
+.tbc_pck .price_div p {
+  font-size: 18px;
+}
+.tbc_pck .price_div a {
+  font-size: 19px;
+}
+
+.pc_holder {
+  margin-top: 70px;
+  padding-bottom: 100px;
+}
+
+.pcw_title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.packages_wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.package_item {
+  flex: 0 0 20%;
+  background: #fff;
+  border: 2px solid #0071E3;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 35px;
+}
+
+.pc_title {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+.pc_title img {
+  width: 20%;
+  margin-right: 15px;
+}
+
+.pc_dsc {
+  font-size: 18px;
+  color: #555555;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
 .form-title {
   margin-top: 55%;
   font-size: 28px;
@@ -1414,7 +1489,28 @@ footer {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1250px) {
+  .package_item {
+    flex: 0 0 40%;
+  }
+}
 @media screen and (max-width: 768px) {
+  .pc_holder {
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .pcw_title {
+    font-size: 22px;
+  }
+  .pc_title {
+    font-size: 19px;
+  }
+  .pc_title img {
+    width: 15%;
+  }
+  .pc_dsc {
+    font-size: 16px;
+  }
   #main_page .main_content {
     padding: 50px 0 30px 0;
   }
@@ -1469,9 +1565,6 @@ footer {
   #about_section .box_item img {
     width: 40%;
   }
-  #why_section {
-    margin-top: 50px;
-  }
   #why_section .ww_title p {
     font-size: 30px;
   }
@@ -1518,6 +1611,19 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .packages_wrapper {
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .package_item {
+    flex: 0 0 100%;
+  }
+  .cta_mcontainer {
+    gap: 15px;
+  }
+  .cta_mcontainer p {
+    font-size: 12px !important;
+  }
   .cns_title {
     font-size: 22px;
   }
@@ -1555,7 +1661,7 @@ footer {
     font-size: 14px;
   }
   .link_get a {
-    font-size: 25px;
+    font-size: 20px;
   }
   .contact-form-section {
     margin: 1rem;
@@ -1657,6 +1763,10 @@ header {
   opacity: 0;
 }
 
+.menu-btn.active .bar-hide {
+  opacity: 0;
+}
+
 .menu-btn.active .bar:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
@@ -1675,7 +1785,7 @@ header {
   height: 100%;
   padding: 70px 20px 0 20px;
   background: #000000;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform 0.5s;
   z-index: 2;
 }
@@ -1697,18 +1807,24 @@ header {
 
 .menu_mobileblock {
   display: flex;
+  align-items: center;
+  padding: 5px 0;
 }
 
 .menu_logo {
   position: relative;
-  margin-right: auto;
+  margin-left: auto;
   padding: 10px 20px;
 }
 .menu_logo a {
   text-decoration: none;
   color: #fff;
-  font-weight: 100;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid #ff5740;
+  border-radius: 35px;
+  background: #ff5740;
+  padding: 8px 25px;
 }
 
 #popup-form textarea {
@@ -1834,8 +1950,8 @@ header {
     max-width: 60%;
     height: auto;
   }
-  .cta_mcontainer {
-    gap: 0px;
+  .cta_mcontainer img {
+    width: 20px;
   }
   .cta_mcontainer .btnOpenForm {
     font-size: 15px;
