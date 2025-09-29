@@ -1540,7 +1540,7 @@ max-width: 350px !important;
 
 .form-title {
   margin-top: 55%;
-    font-size: 19px;
+    font-size: 39px;
     font-weight: 600;
     margin-bottom: 20px;
     color: $color-dark;
@@ -1551,11 +1551,13 @@ max-width: 350px !important;
     }
 }
 .form-subtitle {
-    font-size: 15px;
+    font-size: 20px;
     color: #646464;
     text-align: center;
+        margin: 0 auto;
     margin-bottom: 30px;
     font-weight: $bold;
+    max-width: 40px;
 }
 .form_cta_btn {
   width: 100%;
@@ -2065,6 +2067,13 @@ header {
 
 // ===== MOBILE MENU =====
 @media screen and (max-width: 960px) {
+    .form-title {
+    font-size: 21px;
+}
+.form-subtitle {
+    font-size: 15px;
+    max-width: 100%;
+}
   #menu {display: none;}
   header {
     display: flex;

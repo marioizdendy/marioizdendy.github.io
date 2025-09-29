@@ -1445,7 +1445,7 @@ footer {
 
 .form-title {
   margin-top: 55%;
-  font-size: 19px;
+  font-size: 39px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #1D1D1F;
@@ -1457,11 +1457,13 @@ footer {
 }
 
 .form-subtitle {
-  font-size: 15px;
+  font-size: 20px;
   color: #646464;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 700;
+  max-width: 40px;
 }
 
 .form_cta_btn {
@@ -1952,6 +1954,13 @@ header {
 }
 
 @media screen and (max-width: 960px) {
+  .form-title {
+    font-size: 21px;
+  }
+  .form-subtitle {
+    font-size: 15px;
+    max-width: 100%;
+  }
   #menu {
     display: none;
   }
