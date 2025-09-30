@@ -1463,7 +1463,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 700;
-  max-width: 40px;
+  max-width: 400px;
 }
 
 .form_cta_btn {
@@ -2018,5 +2018,25 @@ header {
 }
 
 .rb-text h1, .rb-text h2, .rb-text h3, .rb-text h4, .rb-text h5, .rb-text p {
-  margin-top: 30px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.rb-text ul {
+  font-size: 14px;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.rb-text ul li {
+  margin-bottom: 10px;
+}
+
+.rb-text h3 {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.rb-page {
+  margin-bottom: 50px;
 }/*# sourceMappingURL=styles.css.map */
